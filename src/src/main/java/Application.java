@@ -1,23 +1,26 @@
+import entities.GeometricAreasCalculator;
+
 import java.util.Scanner;
 
-public class Main {
+public class Application {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        GeometricAreasCalculator calculator = new GeometricAreasCalculator();
 
-        System.out.print("Enter value A: ");
-        double A = getValidDouble(sc);
+        System.out.print("Enter value a: ");
+        double a = getValidDouble(sc);
 
-        System.out.print("Enter value B: ");
-        double B = getValidDouble(sc);
+        System.out.print("Enter value b: ");
+        double b = getValidDouble(sc);
 
-        System.out.print("Enter value C: ");
-        double C = getValidDouble(sc);
+        System.out.print("Enter value c: ");
+        double c = getValidDouble(sc);
 
-        double areaTriangle = (A * C) / 2;
-        double areaCircle = Math.PI * C * C;
-        double areaTrapezoid = (A + B) * C / 2;
-        double areaSquare = B * B;
-        double areaRectangle = A * B;
+        double areaTriangle = calculator.areaTriangle(a, b);
+        double areaCircle = calculator.areaCircle(c);
+        double areaTrapezoid = calculator.areaTrapezoid(a, b, c);
+        double areaSquare = calculator.areaSquare(b);
+        double areaRectangle = calculator.areaRectangle(a, b);
 
         System.out.println("-------------------------------");
         System.out.printf("Triangle: %.3f\n", areaTriangle);
