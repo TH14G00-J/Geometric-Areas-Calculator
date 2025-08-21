@@ -1,24 +1,26 @@
 # 📐 Calculadora de Áreas Geométricas em Java
-## 🔹 Funcionalidades:
 
-- Calcula áreas de 5 figuras geométricas diferentes
+## 🔹 Funcionalidades
 
-- Valida entradas numéricas (ponto flutuante)
+* Calcula áreas de 5 figuras geométricas: triângulo, círculo, trapézio, quadrado e retângulo
+* Valida entradas numéricas (double)
+* Formata saída com 3 casas decimais
+* Interface simples e intuitiva via terminal
+* Lógica separada em classe `GeometricAreasCalculator` para facilitar testes unitários
 
-- Formata saída com 3 casas decimais
+## 🚀 Como executar
 
-- Interface simples e intuitiva via terminal
-
-## 🚀 Como executar:
 ```
-javac Main.java
-java Main
+javac Application.java
+java Application
 ```
-## 💻 Exemplo de uso:
+
+## 💻 Exemplo de uso
+
 ```
-Enter value A: 5.0
-Enter value B: 4.0
-Enter value C: 3.0
+Enter value a: 5.0
+Enter value b: 4.0
+Enter value c: 3.0
 
 Triangle: 7.500
 Circle: 28.274
@@ -27,19 +29,26 @@ Square: 16.000
 Rectangle: 20.000
 ```
 
-## 🎯 Objetivo:
+## 🧪 Testes Unitários
+
+* Criados com JUnit 5 para cada método da classe `GeometricAreasCalculator`
+* Garantem confiabilidade e facilitam manutenção do código
+
+## 🎯 Objetivo
+
 Praticar conceitos de Java incluindo:
 
-- Entrada/saída com Scanner
+* Entrada e saída com `Scanner`
+* Validação de dados
+* Cálculos matemáticos precisos
+* Formatação de números decimais
+* Estrutura de código testável e reutilizável
 
-- Validação de dados
+## 📌 Tecnologias
 
-- Cálculos matemáticos precisos
+Java 11+ | Maven | JUnit 5 | Git
 
-- Formatação de números decimais
+## 🔄 Extensível
 
-## 📌 Tecnologias:
-Java 11+ Scanner Git
-
-## 🔄 Extensível:
-Fácil adição de novas formas geométricas ou idiomas
+* Fácil adição de novas figuras geométricas
+* Possível internacionalização para outros idiomas
